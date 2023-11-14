@@ -1,5 +1,7 @@
 # This is my vimrc :) 
 
+<code>
+
 " Enable Vundle
 set nocompatible
 filetype off
@@ -59,10 +61,10 @@ autocmd filetype java nnoremap <F9> :w <bar> exec '!java '.shellescape('%'). '' 
 autocmd filetype python nnoremap <F9> :w <bar> exec '!python '.shellescape('%'). '' <CR>
 autocmd filetype javascript nnoremap <F9> :w <bar> exec '!node '.shellescape('%'). '' <CR>
 
-set backspace=indent,eol,start 
+set backspace=indent,eol,start
 set encoding=utf-8
 
-" Snippets 
+" Snippets
 " nnoremap <C-j> iclass <ESC>"%pxxxxxa {<ESC>opublic static void main(String args[]){<Esc>o<Esc>o}<Esc>o}<Esc>kki<Tab><Tab>
 
 iab class class <ESC>"%pxxxxxa {<CR>public static void main(String args[]) {<CR>
@@ -70,4 +72,4 @@ iab sysout System.out.println();
 iab for for <ESC>"%i() {<CR>}<ESC>O
 iab main public static void main(String args[]) {<CR>
 
-
+</code>
